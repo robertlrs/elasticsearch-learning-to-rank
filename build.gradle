@@ -11,11 +11,12 @@ buildscript {
 }
 
 group = 'com.o19s'
-version = '1.1.0-es6.6.0'
+version = '1.1.0-es6.2.4'
 
 apply plugin: 'java'
 apply plugin: 'idea'
 apply plugin: 'elasticsearch.esplugin'
+
 
 // this is temporal and will be fixed in 6.0
 ext.projectSubstitutions = [:]
@@ -65,8 +66,8 @@ dependencyLicenses {
 }
 
 // Set to false to not use elasticsearch checkstyle rules
-checkstyleMain.enabled = true
-checkstyleTest.enabled = true
+checkstyleMain.enabled = false
+checkstyleTest.enabled = false
 
 // FIXME dependency license check needs to be enabled
 dependencyLicenses.enabled = false
